@@ -1,0 +1,16 @@
+extends ../layouts/default
+
+include ../../components/todo-container/todo-container
+block variables
+
+block content
+  main.page
+    +todo-container({
+      todoTitleText: "TODO",
+      inputPlaceholder: "Что нужно сделать?",
+      formBtnText: "+",
+      btnFilterAllText: "Все",
+      btnFilterActiveText: "Активные",
+      btnFilterCompletedText: "Выполненные",
+      btnClearCompletedText: "Очистить выполненные"
+    })
